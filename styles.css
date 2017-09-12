@@ -27,7 +27,7 @@ audio {
   flex-wrap: wrap;
 }
 
-.artistwrapper {
+.artistwrapper, .resultwrapper {
   text-align: center;
   padding: 1em;
   border: grey;
