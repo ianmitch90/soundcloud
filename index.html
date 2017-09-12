@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SoundCloud Music Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Really Awesome Music Site</h1>
+    </header>
+    <canvas id="canvas" width="1000" height="300"></canvas>
+    <section class="player">
+      <audio class="music-player" controls="controls" src=""></audio>
+    </section>
+    <section class="search">
+      <form class="search-form" onsubmit="search()">
+        <input type="text" name="searchquery" value="">
+        <button type="submit" name="search" id = "search">Search</button>
+      </form>
+    </section>
+    <section class="results"></section>
+  </div>
+  <script src="main.js"></script>
+
+</body>
+</html>

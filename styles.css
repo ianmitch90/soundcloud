@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:100i');
+body {
+  font-family: 'Kaushan Script', cursive;
+  background-color: #34495e;
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+}
+
+audio {
+  width: 100%;
+  padding: 2em;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.artistwrapper {
+  text-align: center;
+  padding: 1em;
+  border: grey;
+  border-style: solid;
+  border-width: thin;
+  margin: 1em;
+  width: 25%;
+  height: auto;
+}
+
+button {
+  height: 4em;
+  width: 25%;
+  border: #202123;
+  border-style: groove;
+  background: #34495e;
+  color: white;
+  border-color: white;
+  font-family: 'Kaushan Script', cursive;
+}
+
+input {
+  font-weight: normal;
+  font-size: xx-large;
+  width: 50%;
+  font-family: 'Lato', sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/*section.search {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}*/
