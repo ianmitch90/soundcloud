@@ -1,71 +1,65 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:100i');
-body {
-  font-family: 'Kaushan Script', cursive;
-  background-color: #34495e;
-  color: white;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:100i');
 
-header {
-  text-align: center;
-}
-
-.player {
-  display: flex;
-  justify-content: center;
-}
-
-audio {
-  width: 100%;
-  padding: 2em;
-}
-
-.results {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.artistwrapper, .resultwrapper {
-  text-align: center;
-  padding: 1em;
-  border: grey;
-  border-style: solid;
-  border-width: thin;
-  margin: 1em;
-  width: 25%;
-  height: auto;
-}
-
-button {
-  height: 4em;
-  width: 25%;
-  border: #202123;
-  border-style: groove;
-  background: #34495e;
-  color: white;
-  border-color: white;
-  font-family: 'Kaushan Script', cursive;
+* {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
 input {
-  font-weight: normal;
-  font-size: xx-large;
-  width: 50%;
   font-family: 'Lato', sans-serif;
 }
 
-form {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+body {
+background-image: url('./pexels-photo-552785.jpeg'),
+linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-blend-mode: multiply;
+
+
 }
 
+h1 {
 
-/*section.search {
+}
+.results {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.artistwrapper, .resultwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  margin: 1em;
+}
+.player:hover,
+.player:focus,
+.player:active {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
 
-}*/
+.player {
+  transition: all 0.5s linear;
+  border-radius: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+
+}
+.player canvas,
+.player audio {
+  width: 100%;
+  border-radius: 15px;
+}
+.search {
+
+}
+
+.container {
+
+}

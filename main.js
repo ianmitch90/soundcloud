@@ -1,6 +1,7 @@
 var input = ''
 var artistsarray = []
 var resultsarray = []
+
 var results = document.querySelector('.results')
 document.querySelector('#search').addEventListener('click', function search(e) {
   e.preventDefault()
@@ -25,7 +26,7 @@ document.querySelector('#search').addEventListener('click', function search(e) {
         artistimg.src = json[i].avatar_url
         artistimg.id = 'clickimg'
         artistwrapper.appendChild(artistimg)
-        var artistname = document.createElement('h2')
+        var artistname = document.createElement('span')
         artistname.innerHTML = json[i].username
         artistwrapper.appendChild(artistname)
         var artistid = document.createElement('div')
@@ -39,9 +40,12 @@ document.querySelector('#search').addEventListener('click', function search(e) {
           while (results.hasChildNodes()) {
             results.removeChild(results.lastChild)
           }
-          var backbutton = document.createElement('button')
+          var backbutton = document.createElement('a')
+          backbutton.className = 'material-icons'
           backbutton.id = 'back'
-          backbutton.innerHTML = 'Back'
+          backbutton.className = 'btn-floating btn-large waves-effect waves-light blue'
+          backbutton.innerHTML = 'back'
+
           document.querySelector('.search-form').appendChild(backbutton)
           var artist = this.parentNode.childNodes[2].id
           results.innerHTML = `Now Searching for songs...`
@@ -58,7 +62,7 @@ document.querySelector('#search').addEventListener('click', function search(e) {
                 songimage.src = json2[i].artwork_url
                 songimage.id = 'clickimg'
                 resultwrapper.appendChild(songimage)
-                var songtitle = document.createElement('h2')
+                var songtitle = document.createElement('span')
                 songtitle.innerHTML = json2[i].title
                 resultwrapper.appendChild(songtitle)
                 var artistname = document.createElement('h3')
