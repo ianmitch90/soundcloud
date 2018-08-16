@@ -65,7 +65,7 @@ document.querySelector('#search').addEventListener('click', function search(e) {
                 var songtitle = document.createElement('span')
                 songtitle.innerHTML = json2[i].title
                 resultwrapper.appendChild(songtitle)
-                var artistname = document.createElement('h3')
+                var artistname = document.createElement('p')
                 artistname.innerHTML = json2[i].user.username
                 resultwrapper.appendChild(artistname)
                 var songurl = document.createElement('div')
